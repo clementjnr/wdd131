@@ -4,39 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Clement | WDD 130</title>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Paul Clement</title>
+
     <meta name="description"
-      content="I am Paul Clement, currently studying Software Development at Brigham Young University, Idaho. I am using this page to show my creativity">
+      content="WDD 131 – Dynamic Web Fundamentals by Clement. This page contains web development resources, personal information, and course navigation.">
+
     <meta name="author" content="Paul Clement">
-    <link rel="stylesheet" href="styles/styles.css">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <nav> <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">
+                Scripture
+            </a>
+
+            <a href="#">Final Project</a>
         </nav>
     </header>
+
     <main>
-        <h1>Paul Clement | WDD 130
-        </h1>
-        <img src="images/profile.jpg" alt="Paul Clement's image" width="200">
-        <p>Hello! My name is Paul Clement and i am from Lagos, Nigeria. I am a movie and sport
-            lover.
-            I am currently studying Software Development at Brigham Young University, Idaho. I am
-            looking forward to creating my
-            own portfolio website.</p>
+
+        <h1>Clement</h1>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <div class="text-content">
+
+                    <p>
+                        My name is Paul Clement and I am passionate about technology,
+                        web development, and UI/UX design. I enjoy learning how
+                        websites and applications are built and solving problems
+                        through design and programming. I also enjoy improving my
+                        skills in HTML, CSS, JavaScript, and GitHub.
+                    </p>
+
+                    <h3>Lagos, Nigeria</h3>
+
+                    <div class="location">
+
+                        <figure>
+                            <img src="images/nigeria-flag.png" alt="Flag of Nigeria">
+
+                            <figcaption>Official Flag of Nigeria</figcaption>
+                        </figure>
+
+                        <p>
+                            Nigeria is one of the largest countries in Africa and
+                            is known for its culture, entertainment industry, and
+                            technology growth. Lagos is a major city filled with
+                            opportunities in business, education, and software
+                            development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <img class="profile-image" src="images/profile.jpg"
+                  alt="Profile photo of Paul Clement">
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul class="resources">
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+            </ul>
+
+        </section>
+
     </main>
-    <aside>
-        <h2>Lagos</h2>
-        <img src="images/lagos.jpg" alt="lagos image">
-        <p>Lagos is a state in the south western part of Nigeria. It is Nigeria's economic nervous
-            center and its most populous state, despite having the smallest landmass</p>
-    </aside>
+
     <footer>
-        <p>© 2026 🕴 Paul Clement 📌 Lagos, Nigeria</p>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌸 Paul Clement 🌸 Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
     </footer>
 
 </body>
