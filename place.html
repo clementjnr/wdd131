@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Nigeria</title>
+
+    <meta name="description"
+      content="Explore Lagos Nigeria including weather, population, culture, and important information about the city.">
+
+    <meta name="author" content="Paul Clement">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lagos, Nigeria</h1>
+    </header>
+
+    <main>
+
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/lagos-large.webp">
+
+            <img src="images/lagos-small.webp" alt="Beautiful view of Lagos Nigeria"
+              class="hero-image">
+        </picture>
+
+
+        <section class="card data-card">
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>Population:</strong> 15 Million+</p>
+            <p><strong>Language:</strong> English</p>
+            <p><strong>Currency:</strong> Naira</p>
+            <p><strong>Time Zone:</strong> WAT</p>
+            <p><strong>Calling Code:</strong> +234</p>
+        </section>
+
+
+        <section class="card weather-card">
+
+            <h2 class="weather-title">Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
+
+            <p><strong>Conditions:</strong> Cloudy</p>
+
+            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+
+            <p><strong>Wind Chill:</strong>
+                <span id="windchill"></span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            Paul Clement | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
