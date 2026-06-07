@@ -1,0 +1,103 @@
+:root {
+    --primary: #4b004b;
+    --secondary: #f3edf3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+header,
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+form {
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.ratings label {
+    text-align: center;
+}
+
+.ratings input {
+    width: auto;
+}
+
+input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 2rem;
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .ratings {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
