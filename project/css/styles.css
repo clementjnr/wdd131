@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary: #008751;
+    --secondary: #f1bc00;
+    --dark: #222;
+    --light: #f8f8f8;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    color: var(--primary);
+    margin-bottom: .5rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: .75rem;
+    color: var(--primary);
+}
+
+.card p {
+    padding: 0 .75rem 1rem;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filters button,
+.btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    margin: .25rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover,
+.btn:hover {
+    background: #006b3f;
+}
+
+.form-section {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#savedMessage {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+}
